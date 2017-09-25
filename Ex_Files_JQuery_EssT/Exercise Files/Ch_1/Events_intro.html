@@ -1,3 +1,11 @@
+<!--
+    Editor : Chinatsu Kawakami
+    Date : 2017-09-25
+    Modified Date: 2017-09-25
+    Version : 0.0.6 Handing events.
+-->
+
+
 <!DOCTYPE html>
 <html>
 
@@ -18,7 +26,7 @@
         }
         function onMouseClick(evt) {
             $("#example").text(evt.type + ": " + evt.pageX + ", " + evt.pageY);
-            $("#example").off("mousemove", onMouseOver);
+            $("#example").off("mousemove", onMouseOver);//after clicking, mousemove does not work 
         }
         function onMouseLeave(evt) {
             $("#example").text("mouseleave");
