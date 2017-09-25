@@ -2,7 +2,7 @@
     Editor : Chinatsu Kawakami
     Date : 2017-09-25
     Modified Date:Date : 2017-09-25
-    Version : 0.0.1 initial commit
+    Version : 0.0.2 add the jquery script in this file.
 -->
 
 
@@ -14,8 +14,13 @@
     <link rel="stylesheet" href="../style.css" />
 
     <!-- insert the script to reference jQuery here -->
-
+    <script src="../jquery-3.0.0.js"></script>
     <!-- insert the script to display the Hello World message here -->
+    <script>
+    $("document").ready(function(){
+       $("#content").append("<p>The page just loaded</p>");
+    })
+    </script>
 </head>
 
 <body>
